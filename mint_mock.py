@@ -52,11 +52,11 @@ def stake(amount, private_key):
     w3.eth.wait_for_transaction_receipt(tx_hash)
     return tx_hash.hex()
 def main():
-    print(contract_mock_token.functions.balanceOf(w3.to_checksum_address("0xbe375b16a55E3323e22dE841235b84eFd557F09D")).call())
     with open("private_key.txt", "r") as private_key_file:
         private_keys=private_key_file.readlines()
     for private_key in private_keys:
         account=w3.eth.account.from_key(private_key.strip())
+        print(contract_mock_token.functions.balanceOf(account.address).call())
         print(mint_mock(private_key.strip()))
         print(stake(contract_mock_token.functions.balanceOf(account.address).call(), private_key.strip()))
 if __name__ == "__main__":
