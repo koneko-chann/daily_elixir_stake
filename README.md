@@ -5,7 +5,8 @@
 This process is specifically for addresses that have **Sepolia ETH** and have delegated to another address (**Elixir node**). Please ensure that you have approved the token before proceeding, as **an excess is expected**.
 
 ## Instructions
-
+### Install libs
+- pip install web3
 ### 1. Private Key
 - Add the private key for the **EVM (Ethereum Virtual Machine)** line by line.
 
