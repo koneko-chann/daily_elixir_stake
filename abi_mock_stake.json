@@ -1,0 +1,384 @@
+[
+    {
+      "name": "slash",
+      "type": "function",
+      "inputs": [
+        {
+          "name": "token",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [],
+      "payable": null,
+      "constant": null,
+      "selector": "0x02fb4d85",
+      "signature": "slash(address,uint256)",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "name": "isJailed",
+      "type": "function",
+      "inputs": [
+        {
+          "name": "user",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool",
+          "internalType": "bool"
+        }
+      ],
+      "payable": null,
+      "constant": null,
+      "selector": "0x14bfb527",
+      "signature": "isJailed(address)",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "name": "unstake",
+      "type": "function",
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [],
+      "payable": null,
+      "constant": null,
+      "selector": "0x2e17de78",
+      "signature": "unstake(uint256)",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "name": "unjail",
+      "type": "function",
+      "inputs": [
+        {
+          "name": "account",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [],
+      "payable": null,
+      "constant": null,
+      "selector": "0x449ecfe6",
+      "signature": "unjail(address)",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "name": "initialize",
+      "type": "function",
+      "inputs": [
+        {
+          "name": "_token0",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "_token1",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [],
+      "payable": false,
+      "constant": false,
+      "selector": "0x485cc955",
+      "signature": "initialize(address,address)",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "name": "upgradeToAndCall",
+      "type": "function",
+      "inputs": [
+        {
+          "name": "newImplementation",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "data",
+          "type": "bytes",
+          "internalType": "bytes"
+        }
+      ],
+      "outputs": [],
+      "payable": null,
+      "constant": null,
+      "selector": "0x4f1ef286",
+      "signature": "upgradeToAndCall(address,bytes)",
+      "stateMutability": "payable"
+    },
+    {
+      "name": "proxiableUUID",
+      "type": "function",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32",
+          "internalType": "bytes32"
+        }
+      ],
+      "payable": null,
+      "constant": null,
+      "selector": "0x52d1902d",
+      "signature": "proxiableUUID()",
+      "stateMutability": "view"
+    },
+    {
+      "name": "delegates",
+      "type": "function",
+      "inputs": [
+        {
+          "name": "delegator",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "payable": null,
+      "constant": null,
+      "selector": "0x587cde1e",
+      "signature": "delegates(address)",
+      "stateMutability": "view"
+    },
+    {
+      "name": "delegate",
+      "type": "function",
+      "inputs": [
+        {
+          "name": "delegatee",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [],
+      "payable": null,
+      "constant": null,
+      "selector": "0x5c19a95c",
+      "signature": "delegate(address)",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "name": "stakedBalance",
+      "type": "function",
+      "inputs": [
+        {
+          "name": "_account",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "payable": null,
+      "constant": null,
+      "selector": "0x60217267",
+      "signature": "stakedBalance(address)",
+      "stateMutability": "view"
+    },
+    {
+      "name": "renounceOwnership",
+      "type": "function",
+      "inputs": [],
+      "outputs": [],
+      "payable": null,
+      "constant": null,
+      "selector": "0x715018a6",
+      "signature": "renounceOwnership()",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "name": "acceptOwnership",
+      "type": "function",
+      "inputs": [],
+      "outputs": [],
+      "payable": false,
+      "constant": false,
+      "selector": "0x79ba5097",
+      "signature": "acceptOwnership()",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "name": "owner",
+      "type": "function",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "payable": null,
+      "constant": null,
+      "selector": "0x8da5cb5b",
+      "signature": "owner()",
+      "stateMutability": "view"
+    },
+    {
+      "name": "undelegate",
+      "type": "function",
+      "inputs": [],
+      "outputs": [],
+      "payable": null,
+      "constant": null,
+      "selector": "0x92ab89bb",
+      "signature": "undelegate()",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "name": "delegatedBalance",
+      "type": "function",
+      "inputs": [
+        {
+          "name": "_account",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "payable": null,
+      "constant": null,
+      "selector": "0x95d98c93",
+      "signature": "delegatedBalance(address)",
+      "stateMutability": "view"
+    },
+    {
+      "name": "jail",
+      "type": "function",
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "constant": true,
+      "selector": "0x9bcbea52",
+      "signature": "jail(address)",
+      "stateMutability": "view"
+    },
+    {
+      "name": "stake",
+      "type": "function",
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [],
+      "payable": null,
+      "constant": null,
+      "selector": "0xa694fc3a",
+      "signature": "stake(uint256)",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "name": "UPGRADE_INTERFACE_VERSION",
+      "type": "function",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "string",
+          "internalType": "string"
+        }
+      ],
+      "payable": null,
+      "constant": null,
+      "selector": "0xad3cb1cc",
+      "signature": "UPGRADE_INTERFACE_VERSION()",
+      "stateMutability": "view"
+    },
+    {
+      "name": "pendingOwner",
+      "type": "function",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "payable": null,
+      "constant": null,
+      "selector": "0xe30c3978",
+      "signature": "pendingOwner()",
+      "stateMutability": "view"
+    },
+    {
+      "name": "core",
+      "type": "function",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "contract ICore"
+        }
+      ],
+      "payable": null,
+      "constant": null,
+      "selector": "0xf2f4eb26",
+      "signature": "core()",
+      "stateMutability": "view"
+    },
+    {
+      "name": "transferOwnership",
+      "type": "function",
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [],
+      "payable": null,
+      "constant": null,
+      "selector": "0xf2fde38b",
+      "signature": "transferOwnership(address)",
+      "stateMutability": "nonpayable"
+    }
+  ]
